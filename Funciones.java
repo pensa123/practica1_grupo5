@@ -17,11 +17,7 @@ public class Funciones {
    }
 
 	public double valorAbsoluto(double valor){
-      	if(valor<0){
-			System.out.println("El valor original es negativo");
-			return valor * -1;
-		}
-		System.out.println("El valor original es positvo");
+      	if(valor<0) return valor * -1;
       	return valor;
     }
     
