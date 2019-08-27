@@ -45,6 +45,7 @@ public class Funciones {
 
 	public double multiplicacion(double valor1, double valor2)
 	{
+		System.out.println("Esta multiplicando "+valor1+" por "+valor2);
 		return valor1*valor2;
 	}
 
