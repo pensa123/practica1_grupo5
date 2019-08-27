@@ -22,4 +22,7 @@ public class Funciones {
 	public double potenciaAlCubo(double valor){
 		return valor * valor * valor;
 	}
+	public double raizAlCubo(double valor){
+		return Math.pow(valor, 1.0/3.0);
+	}
 }
