@@ -10,27 +10,22 @@ public class Funciones {
    		se usa el modelo
    		D = b2 - 4ac.
    		*/
-   		double total=(b*b)-4*(a*c);
+   		double total=Math.pow(b,b);
+   		System.out.println("b^2="+total);
+   		total-=4*(a*c);
+   		System.out.println("-4ac="+(4*(a*c)));
    		if(total>0){return "Tiene dos soluciones Reales";}
    		else if(total==0){return "Tiene dos soluciones Reales iguales";}
    		else{return "No tiene solucion real";}
    }
 
-	public double valorAbsoluto(double valor){ 
-		System.out.println("CÁLCULO DEL VALOR ABSOLUTO");
-		double absoluto;
+	public double valorAbsoluto(double valor){
       	if(valor<0){
 			System.out.println("El valor original es negativo");
-			System.out.println("Entonces se multiplica el valor original por -1");
-			absoluto = valor * -1;
-			System.out.println("Y el valor absoluto es: " + absoluto);
-			return absoluto;
+			return valor * -1;
 		}
-		absoluto = valor;
 		System.out.println("El valor original es positvo");
-		System.out.println("Entonces el valor absoluto es el mismo que el original");
-		System.out.println("Y el valor absoluto es: " + absoluto);
-      	return absoluto;
+      	return valor;
     }
     
 	public double potenciaAlCubo(double valor){
@@ -54,6 +49,8 @@ public class Funciones {
 			return 0;
 		}else 
 		{
+			System.out.println("Esta dividiendo "+valor1+" entre "+valor2);
+			//Cambio agregado a la rama bugfix
 			return valor1/valor2;
 		}
 		
