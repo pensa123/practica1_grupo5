@@ -20,12 +20,20 @@ public class Funciones {
    }
 
 	public double valorAbsoluto(double valor){
+		System.out.println("CÁLCULO DEL VALOR ABSOLUTO");
+		double absoluto;
       	if(valor<0){
 			System.out.println("El valor original es negativo");
-			return valor * -1;
+			System.out.println("Entonces se multiplica el valor original por -1");
+			absoluto = valor * -1;
+			System.out.println("Y el valor absoluto es: " + absoluto);
+			return absoluto;
 		}
+		absoluto = valor;
 		System.out.println("El valor original es positvo");
-      	return valor;
+      	System.out.println("Entonces el valor absoluto es el mismo que el original");
+		System.out.println("Y el valor absoluto es: " + absoluto);
+      	return absoluto;
     }
     
 	public double potenciaAlCubo(double valor){
