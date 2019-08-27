@@ -46,6 +46,8 @@ public class Funciones {
 			return 0;
 		}else 
 		{
+			System.out.println("Esta dividiendo "+valor1+" entre "+valor2);
+			//Cambio agregado a la rama bugfix
 			return valor1/valor2;
 		}
 		
