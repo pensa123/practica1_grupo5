@@ -25,4 +25,15 @@ public class Funciones {
 	public double raizAlCubo(double valor){
 		return Math.pow(valor, 1.0/3.0);
 	}
+
+	public double multiplicacion(double valor1, double valor2)
+	{
+		return valor1*valor2;
+	}
+
+	public double division(double valor1, double valor2)
+	{
+		//Función de división sin validar la división entre cero;
+		return valor1/valor2;
+	}
 }
