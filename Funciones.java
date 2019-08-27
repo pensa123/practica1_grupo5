@@ -5,13 +5,15 @@ public class Funciones {
      */
   public Funciones(){
   }
-   public double CalcularDiscriminante(double a,double b,double c){
+   public String CalcularDiscriminante(double a,double b,double c){
    		/*
    		se usa el modelo
    		D = b2 - 4ac.
    		*/
    		double total=(b*b)-4*(a*c);
-   		return total;
+   		if(total>0){return "Tiene dos soluciones Reales";}
+   		else if(total==0){return "Tiene dos soluciones Reales iguales";}
+   		else{return "No tiene solucion real";}
    }
 
 	public double valorAbsoluto(double valor){
