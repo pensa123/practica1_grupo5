@@ -33,7 +33,16 @@ public class Funciones {
 
 	public double division(double valor1, double valor2)
 	{
-		//Función de división sin validar la división entre cero;
-		return valor1/valor2;
+		//función considerando la división entre cero 
+		if(valor2==0.0 || valor2==0)
+		{
+			System.out.println("No es posible la división entre cero ");
+			return 0;
+		}else 
+		{
+			return valor1/valor2;
+		}
+		
+
 	}
 }
