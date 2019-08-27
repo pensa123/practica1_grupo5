@@ -10,7 +10,10 @@ public class Funciones {
    		se usa el modelo
    		D = b2 - 4ac.
    		*/
-   		double total=(b*b)-4*(a*c);
+   		double total=Math.pow(b,b);
+   		System.out.println("b^2="+total);
+   		total-=4*(a*c);
+   		System.out.println("-4ac="+(4*(a*c)));
    		if(total>0){return "Tiene dos soluciones Reales";}
    		else if(total==0){return "Tiene dos soluciones Reales iguales";}
    		else{return "No tiene solucion real";}
