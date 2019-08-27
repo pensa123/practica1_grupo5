@@ -19,4 +19,7 @@ public class Funciones {
       	return valor;
     }
     
+	public double potenciaAlCubo(double valor){
+		return valor * valor * valor;
+	}
 }
