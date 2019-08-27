@@ -14,5 +14,9 @@ public class Funciones {
    		return total;
    }
 
+	public double valorAbsoluto(double valor){
+      	if(valor<0) return valor * -1;
+      	return valor;
+    }
     
 }
